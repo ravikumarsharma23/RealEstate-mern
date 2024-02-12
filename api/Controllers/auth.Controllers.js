@@ -1,5 +1,7 @@
 import User from "../Model/User.Model.js";
 import bcryptjs from "bcryptjs";
+import { errorHandler } from "../utils/Error.js";
+
 
 export const signup = (req, res, next) => {
   const { username, email, password } = req.body;
